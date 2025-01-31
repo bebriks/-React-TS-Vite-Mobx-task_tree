@@ -1,0 +1,71 @@
+.button {
+  background-color: #FFFFFF;
+  color: #524ff8;
+
+  padding: 15px 15px;
+
+  border: 1px solid rgba(36, 36, 36, 0.3);
+  border-radius: 6px;
+
+  cursor: pointer;
+  &:hover {
+    box-shadow: rgba(82, 79, 248, 0.2) 0px 7px 29px 0px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+.form_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+}
+.label {
+  color: black;
+}
+.input {
+  padding: 10px 5px;
+  border: 1px solid rgba(36, 36, 36, 0.3);
+  border-radius: 6px;
+  &:focus {
+      outline: none;
+      box-shadow: rgba(82, 79, 248, 0.2) 0px 7px 29px 0px;
+  }
+}
+.open_card_button,
+.close_button {
+  display: inline-block;
+  line-height: 60%;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  aspect-ratio: 1;
+  padding: 4px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.open_card_button {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+  &.opened {
+    transform: rotate(-180deg);
+  }
+}
+.flex_row {
+  display: flex;
+}
+.flex_col {
+  display: flex;
+  flex-flow: column;
+}
+.main {
+  width: 100%;
+}
